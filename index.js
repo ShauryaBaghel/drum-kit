@@ -2,8 +2,8 @@
 //code for clicks
 for (var i = 0; i < document.querySelectorAll("button").length; i++) {
   document.querySelectorAll("button")[i].addEventListener("click", function() {
-    makeSound(this.innerHTML);
-    makeAnimation(this.innerHTML);
+    makeSound(this.innerHTML.toLowerCase());
+    makeAnimation(this.innerHTML.toLowerCase());
   });
 }
 //code for keys
